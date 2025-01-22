@@ -12,7 +12,9 @@ const PORT = process.env.PORT||5000;
 app.use(cors());
 
 // We are Create MongoDB Connection
-const MONGO_URI = "mongodb://localhost:27017/MyEmailTemplates"; 
+const MONGO_URI="mongodb+srv://admin:ShGxFq03tpHI47d8@property-manager-cluste.mskks.mongodb.net/?retryWrites=true&w=majority&appName=Property-Manager-Cluster"
+
+// const MONGO_URI = "mongodb://localhost:27017/MyEmailTemplates"; 
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
